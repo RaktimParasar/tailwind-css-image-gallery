@@ -22,17 +22,17 @@ function App() {
 	}, [term]);
 
 	return (
-		<div className='container mx-auto font-poppins'>
+		<div className='container grid px-3 mx-auto font-poppins place-content-center'>
 			<SearchForm searchedText={(text) => setTerm(text)} />
 
 			{!isLoader && images.length === 0 && (
-				<h1 className='text-5xl text-center mx-auto mt-32 text-green-300'>No Images Found</h1>
+				<h1 className='mx-auto mt-32 text-5xl text-center text-green-300'>No Images Found</h1>
 			)}
 			{isLoader ? (
-				<CgSpinnerTwoAlt className='text-6xl text-center mx-auto text-green-500 animate-spin mt-64' />
+				<CgSpinnerTwoAlt className='mx-auto mt-64 text-6xl text-center text-green-500 animate-spin' />
 			) : (
 				<>
-					<div className='grid grid-cols-3 gap-6'>
+					<div className='grid grid-cols-1 gap-6 md:grid-cols-3 sm:grid-cols-2'>
 						{images.map((image) => (
 							<ImageCard key={image.id} image={image} />
 						))}
