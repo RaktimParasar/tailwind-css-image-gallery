@@ -20,13 +20,12 @@ const Navbar = () => {
 							</div>
 							<div className='hidden md:block'>
 								<div className='flex items-baseline ml-10 space-x-4'>
-									<a
-										href='/dashboard'
-										className='px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700'
+									<p
+										className='px-3 py-2 text-sm font-medium text-white rounded-md cursor-pointer hover:bg-gray-700'
 										onClick={() => history.push('/dashboard')}
 									>
 										Dashboard
-									</a>
+									</p>
 
 									<a
 										href='!#'
@@ -117,13 +116,12 @@ const Navbar = () => {
 					{(ref) => (
 						<div className='md:hidden' id='mobile-menu'>
 							<div ref={ref} className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-								<a
-									href='/dashboard'
-									className='block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-gray-700'
+								<p
+									className='block px-3 py-2 text-base font-medium text-white rounded-md cursor-pointer hover:bg-gray-700'
 									onClick={() => history.push('/dashboard')}
 								>
 									Dashboard
-								</a>
+								</p>
 
 								<a
 									href='!#'
