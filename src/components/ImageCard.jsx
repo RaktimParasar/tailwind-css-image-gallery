@@ -14,7 +14,7 @@ const ImageCard = ({ image }) => {
 	};
 
 	return (
-		<div className='max-w-sm overflow-hidden border-2 border-opacity-0 rounded shadow-lg hover:shadow-2xl hover:border-gray-300'>
+		<div className='max-w-sm overflow-hidden transition duration-700 border-2 border-opacity-0 rounded shadow-lg hover:shadow-2xl hover:border-gray-300'>
 			<img
 				onClick={openModal}
 				className='w-full h-64 cursor-pointer'
@@ -23,7 +23,7 @@ const ImageCard = ({ image }) => {
 			/>
 			{isOpen && (
 				<div className='fixed inset-0 flex items-center justify-center backdrop-filter backdrop-blur-lg'>
-					<div className='h-64 px-4 py-3 bg-gray-100 rounded-lg shadow-2xl w-80'>
+					<div className='h-64 max-w-sm px-4 py-3 transition-all transform bg-gray-100 rounded-lg shadow-2xl w-80 animate-bounce'>
 						<div className='flex items-center justify-between'>
 							<h3 className='text-lg font-semibold'>Image</h3>
 							<svg

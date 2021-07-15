@@ -6,6 +6,21 @@ module.exports = {
 			fontFamily: {
 				poppins: ['Poppins', 'sans-serif'],
 			},
+			animation: {
+				bounce: 'bounce 1s',
+			},
+			keyframes: {
+				bounce: {
+					'100%': {
+						transform: 'translateY(0)',
+						animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1) duration-700',
+					},
+					'0%': {
+						transform: 'translateY(-25%)',
+						animationTimingFunction: 'duration-700',
+					},
+				},
+			},
 		},
 	},
 	variants: {
