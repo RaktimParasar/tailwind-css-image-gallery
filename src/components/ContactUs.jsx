@@ -28,7 +28,9 @@ const ContactUs = () => {
 							<h2 className='text-xs font-semibold tracking-widest text-gray-900 title-font'>
 								EMAIL
 							</h2>
-							<a className='leading-relaxed text-indigo-500'>example@email.com</a>
+							<a href='!' className='leading-relaxed text-indigo-500'>
+								example@email.com
+							</a>
 							<h2 className='mt-4 text-xs font-semibold tracking-widest text-gray-900 title-font'>
 								PHONE
 							</h2>

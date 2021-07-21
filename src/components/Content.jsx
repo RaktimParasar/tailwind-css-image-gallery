@@ -36,7 +36,7 @@ const Content = () => {
 								chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four
 								loko. 3 wolf moon brooklyn.
 							</p>
-							<a className='inline-flex items-center text-indigo-500 cursor-pointer'>
+							<a href='!' className='inline-flex items-center text-indigo-500 cursor-pointer'>
 								Learn More
 								<svg
 									fill='none'

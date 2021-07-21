@@ -20,7 +20,7 @@ const Blog = () => {
 									Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
 									tousled waistcoat.
 								</p>
-								<a className='inline-flex items-center'>
+								<a href='!' className='inline-flex items-center'>
 									<img
 										alt='blog'
 										src='https://i.pravatar.cc/300'
@@ -52,7 +52,7 @@ const Blog = () => {
 									Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
 									tousled waistcoat.
 								</p>
-								<a className='inline-flex items-center'>
+								<a href='!' className='inline-flex items-center'>
 									<img
 										alt='blog'
 										src='https://i.pravatar.cc/300'
@@ -82,7 +82,7 @@ const Blog = () => {
 									Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
 									tousled waistcoat.
 								</p>
-								<a className='inline-flex items-center'>
+								<a href='!' className='inline-flex items-center'>
 									<img
 										alt='blog'
 										src='https://i.pravatar.cc/300'
