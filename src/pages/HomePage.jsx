@@ -4,11 +4,12 @@ import { CgSpinnerTwoAlt } from 'react-icons/cg';
 import ImageCard from '../components/ImageCard';
 import Navbar from '../components/Navbar';
 import SearchForm from '../components/SearchForm';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 const HomePage = () => {
 	const [images, setImages] = useState([]);
 	const [isLoader, setIsLoader] = useState(true);
-	const [term, setTerm] = useState('tech');
+	const [term, setTerm] = useLocalStorage('term', 'tech');
 
 	useEffect(() => {
 		fetch(
